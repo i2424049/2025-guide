@@ -1,0 +1,59 @@
+.accordion-toggle::before {
+    content: "▶ ";
+  }
+  
+  .accordion-toggle.open::before {
+    content: "▼ ";
+  }
+  
+  .submenu {
+    display: none;
+    background-color: #5b3f38; /* サブメニューの背景色 */
+  }
+
+  #sidebarMenu.open {
+  transform: translateX(0); /* ← 開いた状態 */
+}
+  
+  .sidebarMenuInner a.active {
+    color: #F9D253; /* ハイライト色 */
+  }
+  
+  .submenu li a {
+    font-size: 14px;
+    padding-left: 35px;
+  }
+  
+  #sidebarMenu {
+    width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+    background: #624841;
+    transform: translateX(-400px);
+
+  }
+
+
+  
+  .sidebarMenuInner {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+  }
+  .sidebarMenuInner a.active {
+  color: #F9D253;
+}
+  
+  .sidebarMenuInner a, .accordion-toggle {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .accordion-parent.open .submenu {
+  max-height: 3000px; /* 仮に大きくする */
+  display: block;
+}

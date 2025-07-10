@@ -1,0 +1,226 @@
+/* ここでブラウザのCSSをリセットする */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/* 全体レイアウト用のコンテナ */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    /* 左右マージン */
+}
+
+/*
+.taitoru {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  height: vh;       
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+
+
+}*/
+
+h1 {
+  font-size: 40px;
+
+  text-align: center;
+  position: relative; /*positionをrelativeに指定*/
+  margin-top: 60px;
+  font-family: "Noto Serif JP";
+}
+h1::after {
+  position: absolute; /*positionをabsoluteに指定*/
+  /*content: "";*/
+  background-color: #000; /*下線の色*/
+  width: 200px; /*線の幅*/
+  height: 2px; /*線の太さ*/
+  bottom: -20px; /*線のタテ位置*/
+  left: 50%;  /*線のヨコ位置*/
+  transform: translateX(-50%);/*線のヨコ位置*/
+}
+
+.setumei{
+    color: #000;
+
+text-align: center;
+font-family: "Noto Serif JP";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 100px; /* 57.6px */
+}
+
+
+
+
+#tugi{
+    list-style-type: none;
+    margin: auto;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+
+}
+
+#tugi li{
+    width: 191px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#tugi li.kyaratugi a {
+    width: 191px;
+    height: 34px;
+    background: url('image/tansakushawotukuru.png') center center no-repeat;
+    background-size: cover;     
+    background-position: center;
+    display: block;
+    text-decoration: none;
+    text-indent: -999999px;
+}
+
+#tugi li.kyaratugi a:hover {
+    background: url('image/tansakushawotukuruhoba.png') center center no-repeat;
+    background-size: cover; 
+}
+
+#tugi li.playtugi a {
+    width: 191px;
+    height: 34px;
+    background: url('image/asobu.png');
+    background-size: cover;     
+    background-position: center;
+    display: block;
+    text-decoration: none;
+    text-indent: -999999px;
+}
+
+#tugi li.playtugi a:hover {
+    background: url('image/asobuhoba.png');
+    background-size: cover;
+}
+
+/* --------- ファーストビューの作り方 --------- */
+
+.first-view {
+    padding: 64px 0;
+}
+
+.first-view-grid {
+    /*display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;*/
+}
+
+/* 画像：5〜12カラム（右8） */
+.image {
+    grid-column: 5 / 13;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* テキスト：1〜9カラム（左8） */
+.copy {
+    grid-column: 1 / 9;
+    grid-row: 1;
+    /* ← 画像と同じ行に */
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 32px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    align-self: center;
+    /* 縦中央に揃える（任意） */
+}
+
+
+/* ---------  概要セクション --------- */
+/* 12カラムグリッドの基本 */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
+
+/* テキストを左寄せに配置し、8カラム使用 */
+.text {
+    grid-column: span 8;
+    /* 1列目から8列目を使用 */
+    justify-self: start;
+}
+
+/* 画像を右寄せに配置し、8カラム使用 */
+.ov-img {
+    grid-column: 5 / span 8;
+    /* 5列目から8カラム分（つまり12列目まで）使用 */
+}
+
+.overview {
+    padding: 64px 0;
+}
+
+.overview img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+
+
+/* ヘッダー＆フッター */
+.header,
+.footer {
+    color: #ffffff;
+    padding: 32px 0;
+    text-align: center;
+    background: #624841;
+}
+
+header {
+  text-align: center;
+  background-color: #624841;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-left: 5px solid #F9D253;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
