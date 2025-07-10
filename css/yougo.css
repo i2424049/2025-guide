@@ -1,0 +1,62 @@
+.term {
+  position: relative;
+  cursor: help;
+  color: #624841;
+  font-weight: bold;
+  text-decoration: underline dotted;
+}
+
+/* カード本体 */
+.term::after {
+  content: attr(data-title) "\A" attr(data-subtitle) "\A\A" attr(data-description);
+  white-space: pre-line;
+  position: absolute;
+  top: 1.8em;
+  left: 0;
+  z-index: 100;
+  min-width: 240px;
+  max-width: 300px;
+  padding: 15px 18px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #624841, #51352e);
+  color: #fffaf0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  font-size: 0.9em;
+  line-height: 1.6;
+  display: none;
+  border-left: 6px solid #F9D253;
+  font-family: "Georgia", "游明朝", serif;
+  transition: opacity 0.3s ease;
+}
+
+/* 矢印風（上） */
+.term::before {
+  content: "";
+  position: absolute;
+  top: 1.4em;
+  left: 15px;
+  border: 8px solid transparent;
+  border-bottom-color: #624841;
+  z-index: 99;
+  display: none;
+}
+
+/* 表示時 */
+.term:hover::after,
+.term:hover::before,
+.term:focus::after,
+.term:focus::before {
+  display: block;
+}
+
+header input#searchInput {
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  border: 2px solid #F9D253;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 400px;
+  background: #fff;
+  color: #333;
+}

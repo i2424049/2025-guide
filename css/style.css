@@ -1,0 +1,206 @@
+/* ここでブラウザのCSSをリセットする */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/* 全体レイアウト用のコンテナ */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    /* 左右マージン */
+}
+
+
+
+h1 {
+  font-size: 40px;
+
+  text-align: center;
+  position: relative; /*positionをrelativeに指定*/
+  margin-top: 60px;
+  font-family: "Noto Serif JP";
+}
+h1::after {
+  position: absolute; /*positionをabsoluteに指定*/
+  /*content: "";*/
+  background-color: #000; /*下線の色*/
+  width: 200px; /*線の幅*/
+  height: 2px; /*線の太さ*/
+  bottom: -20px; /*線のタテ位置*/
+  left: 50%;  /*線のヨコ位置*/
+  transform: translateX(-50%);/*線のヨコ位置*/
+}
+
+.setumei{
+    color: #000;
+
+text-align: center;
+font-family: "Noto Serif JP";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 100px; /* 57.6px */
+}
+
+
+
+/*メインページ*/
+h2 {
+    border-top: double 3px #333;
+    border-bottom: solid 1px #333;
+    padding: 8px 16px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: #333;
+    font-weight: 400;
+    display: block;
+    box-sizing: border-box;
+    max-width: 500px;
+    text-align: center; 
+    margin: 24px;
+    margin-inline: auto;
+  }
+
+  .main-content {
+    max-width: 900px;         /* 最大幅：画面が広くても読みやすく */
+    margin: 0 auto;           /* 中央に配置 */
+    padding: 40px 20px;       /* 上下左右の余白 */
+    text-align: left;         /* テキストは左揃え */
+    line-height: 1.8;             /* 行間を少し広げて読みやすく */
+    font-size: 1rem;          /* 基本文字サイズ */
+    color: #333;    
+    letter-spacing: 0.03em;          /* 文字色 */
+    background: #fff;         /* 背景色（必要なら） */
+    box-sizing: border-box;
+
+  }
+  
+  /* スマホや小さい画面用に調整 */
+  @media screen and (max-width: 600px) {
+    .main-content {
+      padding: 30px 15px;
+      font-size: 0.95rem;
+    }
+  }
+
+  section{
+    margin: 20% auto;
+  }
+
+  .main-content h2 {
+    margin-top: 40px;     /* 上に余白 */
+    margin-bottom: 20px;  /* 下に余白（本文との間） */
+    color: #624841;       /* お好みで色指定 */
+    font-size: 1.8em;     /* お好みでサイズ調整 */
+  }
+  
+  .main-content p {
+    margin-bottom: 20px;  /* 段落の下に余白をつけると読みやすい */
+    line-height: 1.7;     /* 行間も少し広げると◎ */
+  }
+  
+  
+
+/*次のページに飛ぶ*/
+#tugi{
+    list-style-type: none;
+    margin: auto;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+
+}
+
+#tugi li{
+    width: 191px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#tugi li.kyaratugi a {
+    width: 191px;
+    height: 34px;
+    background: url('image/tansakushawotukuru.png') center center no-repeat;
+    background-size: cover;     
+    background-position: center;
+    display: block;
+    text-decoration: none;
+    text-indent: -999999px;
+}
+
+#tugi li.kyaratugi a:hover {
+    background: url('image/tansakushawotukuruhoba.png') center center no-repeat;
+    background-size: cover; 
+}
+
+#tugi li.playtugi a {
+    width: 191px;
+    height: 34px;
+    background: url('image/asobu.png');
+    background-size: cover;     
+    background-position: center;
+    display: block;
+    text-decoration: none;
+    text-indent: -999999px;
+}
+
+#tugi li.playtugi a:hover {
+    background: url('image/asobuhoba.png');
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+/* ヘッダー＆フッター */
+.header,
+.footer {
+    color: #ffffff;
+    padding: 32px 0;
+    text-align: center;
+    background: #624841;
+}
+
+header {
+  text-align: center;
+  background-color: #624841;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-left: 5px solid #F9D253;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
