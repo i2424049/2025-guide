@@ -6,18 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="クトゥルフ神話TRPGの説明をしたサイトです。ルールブックを持ったKPとともに見ることを推奨します。" />
     <title>trpg start home</title>
-
+    
     <link rel="stylesheet" href="./css/style.css" /><link rel="stylesheet" href="./css/menyu.css" />
     <link rel="stylesheet" href="./css/sabumenyu.css" />
+    <link rel="stylesheet" href="./css/yougo.css" />
     <script src="js/submenu.js"></script>
 </head>
 
 <body>
 
 <div class="header">
-
-
-
   <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
 
   <label for="openSidebarMenu" class="sidebarIconToggle">
@@ -39,6 +37,7 @@
       <li class="accordion-parent">
         <span class="accordion-toggle" data-label="もっと知る">もっと知る</span>
         <ul class="submenu">
+          <a href="trpg.html#top">トップ</a>
           <li><a href="trpg.html#kutwuruhu">クトゥルフ神話TRPGって？</a></li>
           <li><a href="trpg.html#flow">基本的な進め方</a></li>
           <li><a href="trpg.html#youi">用意するもの</a></li>
@@ -49,6 +48,7 @@
         <li class="accordion-parent">
             <span class="accordion-toggle" data-label="準備">準備</span>
             <ul class="submenu">
+              <a href="junbi.html#top">トップ</a>
               <li><a href="junbi.html#sisutem">システムの選択</a></li>
               <li><a href="junbi.html#sinario">シナリオの選択</a></li>
               <li><a href="junbi.html#hitoatume">人集め</a></li>
@@ -61,52 +61,404 @@
         <span class="accordion-toggle" data-label="キャラ作成">キャラ作成</span>
 
         <ul class="submenu">
+          <a href="kyara.html#top">トップ</a>
             <li><a href="kyara.html#iakyara">いあきゃらをはじめよう</a></li>
             <li><a href="kyara.html#kihon">基本情報の決め方</a></li>
           <li><a href="kyara.html#status">ステータス設定</a></li>
           <li><a href="kyara.html#skills">技能設定</a></li>
           
           <li><a href="kyara.html#sonota">その他</a></li>
+          <li><a href="kyara.html#sanpuru">サンプル</a></li>
         </ul>
       </li>
 
       <li class="accordion-parent">
   <span class="accordion-toggle" data-label="遊ぶ">遊ぶ</span>
   <ul class="submenu">
+    <li><a href="#top">トップ</a></li>
     <li><a href="play.html#kokoforia">ココフォリアの使い方</a></li>
-    <li><a href="play.html#example">プレイ例</a></li>
-    <li><a href="play.html#example">プレイ例</a></li>
-    <li><a href="play.html#example">プレイ例</a></li>
+    <li><a href="play.html#pcdounyu">キャラクターの導入方法</a></li>
+    <li><a href="play.html#sesshon">セッションの進め方</a></li>
+
+    <li><a href="play.html#end">終わりに</a></li>
   </ul>
 
-      <li><a href="kongo.html" target="_self">今後</a></li>
 
       <li><a href="yougo.html" target="_self">用語</a></li>
     </ul>
   </div>
 </div>
 
+<a id="top"></a>
+
+<header>
+  
+  <h1><span class="sigil">✦</span> キャラクター制作 <span class="sigil">✦</span> </h1>
+  <p>探索者を作るには、いろいろ決めることがある<br/>
+    ここではクトゥルフ神話６版の探索者の作り方を誘導している</p>
+</header>
+
+<div class="main-content">
+
     <section id="iakyara">
-    <h2>いあきゃらをはじめよう</h2>
+    <h2><span class="sigil">✦</span> いあきゃらをはじめよう <span class="sigil">✦</span> </h2>
     <!-- 内容 -->
-  </section>
+<p>探索者を作成するにあたって、いろいろ決めないといけません。<br/>
+      そこで便利なサイト「いあきゃら」を使って作成します。</p>
+
+      <div class="sait_aicon">
+<a href="https://iachara.com/" target="_blank">
+  
+  <div class="sait_aicon">
+
+    <img src="css/image/iakyaraaikon.png" alt="アイコン">
+    <div class="hover-text">クリックで移動</div>
+  </div>
+</a>
+</a>
+      </div>
+
+
+  <figure class="content-image">
+    <img src="css/image/iakyara01.png" alt="いあきゃらのホームページ">
+    <figcaption><a href="https://iachara.com/">サイト：いあきゃら</a><br/>ログインのところから、新規登録か、ログインを行う</figcaption>
+
+      
+      <img src="css/image/iakyara08.png" alt="いあきゃらのホームページ">
+    <figcaption>マイページにいけたら、キャラを作ろう<br/></figcaption>
+
+          <img src="css/image/iakyara02.png" alt="いあきゃらのホームページ">
+
+    <figcaption><a href="https://iachara.com/">サイト：いあきゃら</a></figcaption>
+</figure>
+
+      <p>今回は「キャラを作る（6版）」を選ぼう！<br/>
+        マイページにいけたら、キャラを作ろう!</p>
+
   <section id="kihon">
-    <h2>基本情報の決め方</h2>
+    <h2><span class="sigil">✦</span> 基本情報の決め方<span class="sigil">✦</span> </h2>
+    <p>シナリオ　には、その世界観にあったPCを作成する必要がある。
+      シナリオによっては、HOといった役割が配られることもある。
+      それらを参考に作ってみよう。
+      KPの指示を聞いたり、概要欄をみてキャラクターを作成しよう。</p>
+      <p>ここでは基本情報で決めることとちょっとした説明をします。 
+        基本情報で絶対決めて欲しいことは、赤文字で表示します。 好きな順番で決めていってください！</p>
+
+          <figure class="content-image">
+            <img src="css/image/iakyara09.png" alt="いあきゃらのホームページ">
+
+    <figcaption><a href="https://iachara.com/">サイト：いあきゃら</a><br/>決めたことはここに入力していくよ</figcaption></figure>
+
+      <div class="profile-grid">
+  <div class="label">画像：</div>
+  <div class="value">立ち絵をきめたらここに表示ができるよ。決めても決めなくても〇<br/>
+もし簡単に決めたいなら、「picrew」を使うと簡単につくることができるのでおすすめ！<br/></div>
+
+
+  <dt class="highlight-label">名前：</dt>
+  <div class="value">ふりがなとかも書いてくれると助かるやつ</div>
+
+  <div class="label">タグ：</div>
+  <div class="value">自分の作ったキャラクターを検索するときに使える。</div>
+
+  <dt class="highlight-label">職業：</dt>
+  <div class="value">職業はこのあと技能決めに影響するため決めましょう。　シナリオによって指定があったりするので、KPに確認しましょう！</div>
+
+    <div class="label">年齢：</div>
+  <div class="value">決めなくてもどうにかはなる。
+決めて欲しいといわれることが多い気がする。
+キャラクターによっても「？」で記載するのもありかもしれない</div>
+    <div class="label">性別：</div>
+  <div class="value">男、女、中性、無性、、KPにだめと言われない限り、好きに書いてもいいと思う。個性。</div>
+    <div class="label">身長：</div>
+  <div class="value">書いてあると、他のキャラクターとの比較ができたりするから、盛り上がる。
+この後決めるステータスのSIZによって変えてもよし。</div>
+
+    <div class="label">体重：</div>
+  <div class="value">この後決めるステータスのSIZによって変えてもよし。</div>
+
+    <div class="label">出身：</div>
+  <div class="value">日本かどうかとか書いておくとよい。
+技能の母国語が変わったりするので、書いとくといいかも？</div>
+
+    <div class="label">髪色：</div>
+  <div class="value">髪色。好きに書こう。個性。</div>
+
+      <div class="label">瞳色：</div>
+  <div class="value">瞳色。好きに書こう。個性。</div>
+
+      <div class="label">肌色：</div>
+  <div class="value">肌色。好きに書こう。個性。</div>
+
+</div>
+
     <!-- 内容 -->
   </section>
+
+
   <section id="status">
-    <h2>ステータス設定</h2>
+    <h2><span class="sigil">✦</span> ステータス設定<span class="sigil">✦</span> </h2>
+    <p>探索者の持っているステータスを決めよう。
+      力や頭の良さなどが決められます。
+      強すぎても不利になることがあったり、つまらなくなるので、気をつけてね。</p>
+      <p>ここではどんなものがあるのか、どれくらいが平均なのかを説明しています。
+        ここでは、能力値から、数値を選ぶか、右下のランダムボタンを押すと、数値が出力されます。
+        現在値に全て数値が入っていれば、まるです。</p>
     <!-- 内容 -->
+       <figure class="content-image">
+    <img src="css/image/iakyara03.png" alt="いあきゃらのホームページ">
+    <figcaption><a href="https://iachara.com/">サイト：いあきゃら</a><br/>ステータス</figcaption>
+    </figure>
+
+    <p class="center-text"><span class="sigil">✦</span> 基本ステータス <span class="sigil">✦</span> </p>
+
+          <div class="profile-grid">
+  <div class="label">STR：</div>
+  <div class="value">筋力を表す。数値が高いほど、力が強い。<br/>ダメージボーナスにも影響する数値。<br/></div>
+
+
+  <dt class="label">CON：</dt>
+  <div class="value">健康や頑強さを表す。数値が高いほど、耐久力があり、毒や病気にも耐えられる。<br/>
+HPにも影響する数値。</div>
+
+  <div class="label">POW：</div>
+  <div class="value">思の力、心、そして精神的安定性を合わせたものを表す。数値が高いほど、メンタルが強い。<br/>
+また、SAN値やMP、幸運の技能にも影響する数値。</div>
+
+  <dt class="label">DEX：</dt>
+  <div class="value">足の速さと手の器用さを表す。数値が高いほど、自分の肉体を自在に動かせる。<br/>
+回避技能にも影響する数値。</div>
+
+    <div class="label">APP：</div>
+  <div class="value">顔の良さを表す。高いほど、人を魅了する。</div>
+
+    <div class="label">SIZ：</div>
+  <div class="value">身長や体重を表す。高いほど、体が大きい。<br/>
+HPやダメージボーナスにも影響する数値。</div>
+
+    <div class="label">INT：</div>
+  <div class="value">頭の良さ。閃き。高いほど、論理と直感を飛躍させる能力が高い。<br/>
+アイデアにも影響する数値。</div>
+
+    <div class="label">EDU：</div>
+  <div class="value">教育をどのくらい受けてきたのか。高いほど、物事を知っている。<br/>
+年齢や知識にも影響する数値。</div>
+
+
+</div>
+
+
+    <p class="center-text"><span class="sigil">✦</span> ステータスによって変わる数値 <span class="sigil">✦</span> </p>
+
+              <div class="profile-grid">
+  <div class="label"> HP：</div>
+  <div class="value">耐久値。CONとSIZの値で変わる。
+敵から攻撃を受けたりすると減っていく。
+０になると死ぬ。ロストとなる<br/></div>
+
+
+  <dt class="label"> MP：</dt>
+  <div class="value">マジックポイント。POWの値と同じ
+呪文を使うときや魔術的な効力を発揮する時に消費される。
+０になると、気絶する。</div>
+
+  <div class="label">SAN：</div>
+  <div class="value">正気度。POWの値で決まる。
+一気に減ったりすると発狂する。
+０になると植物人間のようになり、ロストとなる</div>
+
+  <dt class="label">アイデア：</dt>
+  <div class="value">アイデア。INTの値で決まる。
+成功すると、物事を思い出したりすることができる</div>
+
+    <div class="label">幸運：</div>
+  <div class="value">運。POWの値で決まる。</div>
+
+    <div class="label">知識：</div>
+  <div class="value">知識。
+EDUの値で決まる。
+知識があるかどうかの時に判定する。</div>
+
+    <div class="label">DB：</div>
+  <div class="value">ダメージボーナスのこと。何かに攻撃する時に、ダメージにプラスやマイナスになったりする。
+STRとSIZの値によって決まる。</div>
+
+
+
+
+</div>
+
+
+<ul id="tugi">    
+<p>ステータスの目安の一覧を乗せておきます。参考までに</p>
+  <li class="sute-tasutugi"><a href="sute-tasu.html">plaype-ji</a></li>  
+</ul>
+
   </section>
+
   
   <section id="skills">
-    <h2>技能設定</h2>
+    <h2><span class="sigil">✦</span> 技能設定 <span class="sigil">✦</span> </h2>
+
+      <p>技能とは、行動する時に、その行動がうまくいくかどうかをダイスで判定する時にどのくらいの確率で成功するかどうかを判断する数字</p>
     <!-- 内容 -->
+     
+          <div class="profile-grid">
+  <div class="label">例：</div>
+  <div class="value">ドアの向こう側で誰かが話している。
+<br/>→技能値70％の「聞き耳」の技能を振ります。
+<br/>→100面ダイスを振って、70以下が出たら、成功
+<br/>→話の内容を聞くことができる。<br/></div></div>
+
+    <p class="center-text"> <span class="sigil">✦</span> 技能の割り振り <span class="sigil">✦</span> </p>
+    <p>割り振るには、「職業ポイント」と「興味ポイント」にポイントが分かれます。
+それぞれのポイントがなくなるまで、ポイントが割り振れる。</p>
+
+<img src="css/image/iakyara04.png" alt="いあきゃらのホームページ">
+          
+
+
+              <div class="profile-grid">
+  <div class="label"> 初期値：</div>
+  <div class="value">ポイントを割り振らなくても、もともと持っている技能値
+ステータスによって数字がかわるものもあるが、基本同じ数字。<br/>
+合計値が技能の数字となる。</div>
+
+
+  <dt class="label"> 職業ポイント：</dt>
+  <div class="value">EDU×20　の値が職業ポイントとなる。
+基本８つほど技能に割り振る。
+職業によって割り振れる技能が違うため、ルルブを確認するのがおすすめ
+学生の場合は将来の夢などにそって技能をとったりする。</div>
+
+  <div class="label">興味ポイント：</div>
+  <div class="value">正INT×10　の値が興味ポイントとなる。
+自由に割り振ることができる。
+探索者の個性にそって取ると楽しい</div>
+
+  <dt class="label">合計：</dt>
+  <div class="value">全て合算した値が技能値となる。</div>
+</div>
+
+    <p class="center-text"><span class="sigil">✦</span> その他の技能欄 <span class="sigil">✦</span> </p>
+
+                 <div class="profile-grid">
+  <div class="label"> 成長：</div>
+  <div class="value">クリティカルやファンブルをすると成長判定が行える。
+セッション終了後に行うことが多いため、ここにチェックをいれることで、メモとして残しておくことができる。</div>
+
+
+  <dt class="label"> 成長分：</dt>
+  <div class="value">成長後に、書くところ。
+ハウスルールにもよるけれど、終了後、技能の成長判定を行い、成長した分をここに記入。
+継続に行く場合、成長した技能値となる。</div>
+
+  <div class="label">その他：</div>
+  <div class="value">シナリオに補正がある場合、ここに書くことが多い。</div>
+
+
+</div>
+
+<ul id="tugi">    
+<p>技能一覧を乗せておきます。参考までに</p>
+  <li class="ginoutugi"><a href="ginou.html">plaype-ji</a></li>  
+</ul>
+
+
   </section>
+
   <section id="sonota">
-    <h2>その他
+    <h2><span class="sigil">✦</span> その他 <span class="sigil">✦</span> 
     </h2>
     <!-- 内容 -->
+    <p>他！シナリオやKPに書いて欲しいと言われたことを書いたり、
+      自由に個性を出したりできるメモ欄</p>
+
+                <div class="profile-grid">
+  <div class="label">戦闘・武器・防具：</div>
+  <div class="value">武器を持っていく場合は必ずKPに許可をもらってから書きましょう！
+書く内容はルルブに書いてあるのでそこを参照しましょう。<br/></div>
+
+
+  <dt class="label">所持品・所持金：</dt>
+  <div class="value">所持品は書いとくとセッション中に思わぬ役に立つことも。
+思い出の品とか書いているとエモい</div>
+
+  <div class="label">新たに得た知識・経験：</div>
+  <div class="value">ここはセッション終わったあとに書くところ。
+通過したシナリオを書いておくと〇</div>
+
+  <dt class="label">メモ：</dt>
+  <div class="value">好きに書こう
+メモ欄を追加できたり、パスワードを設定できたりする</div>
+
+
+
+
+</div>
   </section>
+
+  <section id="sanpuru">
+    <h2><span class="sigil">✦</span> サンプル <span class="sigil">✦</span> </h2>
+    <p>
+
+      実際どのように振る分けているのかのサンプルを置いておきます。<br/>
+      ネタバレは、「新たに得た経験・知識」の欄のみとなっています。
+    </p>
+
+
+    <div class="explorer-gallery">
+  <a href="https://iachara.com/view/10477702" class="card2">
+    <img src="css/image/tansakusha01.png" alt="探索者1">
+    <div class="overlay">
+      <h3>永未 悠</h3>
+      <p>心理学部の大学生。職業は学生だが、心理学者を参考に技能を割り振っている。</p>
+    </div>
+  </a>
+
+
+
+    <a href="https://iachara.com/view/11964372" class="card2">
+    <img src="css/image/tansakusha03.png" alt="探索者3">
+    <div class="overlay">
+      <h3>美岳 陽華</h3>
+      <p>登山家。日本と中国のハーフ</p>
+    </div>
+  </a>
+  
+  <a href="https://iachara.com/view/5057832" class="card2">
+    <img src="css/image/tansakusha02.png" alt="探索者2">
+    <div class="overlay">
+      <h3>冴月 李苑</h3>
+      <p>刑事。捜査第一課。まっすぐな正義をもっている。ただ天然。</p>
+    </div>
+  </a>
+
+    
+  <a href="https://iachara.com/view/6270722" class="card2">
+    <img src="css/image/tansakusha04.png" alt="探索者2">
+    <div class="overlay">
+      <h3>リロ</h3>
+      <p>殺し屋。実は男の娘。</p>
+    </div>
+  </a>
+
+  <!-- 必要に応じてカード追加 -->
+</div>
+
+
+
+
+  </section>
+  
+
+</div>
+
+<ul id="tugi">    
+<p>つくったらあそぼう</p>
+  <li class="playtugi"><a href="ginou.html">plaype-ji</a></li>  
+</ul>
+
+
 </body>
 </html>
