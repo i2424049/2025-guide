@@ -129,7 +129,7 @@ h2 {
   }
 
   section{
-    margin: 20% auto;
+    margin: 5% auto;
   }
 
   .main-content h2 {
@@ -547,7 +547,7 @@ img{
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 40px;
+
 
 }
 
@@ -561,6 +561,7 @@ img{
   cursor: pointer;
   transition: transform 0.3s ease;
   text-decoration: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .card2 img {
@@ -588,6 +589,7 @@ img{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  
 }
 
 .card2:hover .overlay {
