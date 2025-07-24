@@ -77,7 +77,7 @@
       <li class="accordion-parent">
   <span class="accordion-toggle" data-label="遊ぶ">遊ぶ</span>
   <ul class="submenu">
-    <li><a href="#top">トップ</a></li>
+    <li><a href="play.html#top">トップ</a></li>
     <li><a href="play.html#kokoforia">ココフォリアの使い方</a></li>
     <li><a href="play.html#pcdounyu">キャラクターの導入方法</a></li>
     <li><a href="play.html#sesshon">セッションの進め方</a></li>
@@ -100,6 +100,10 @@
   <p>探索者を作るには、いろいろ決めることがある<br/>
     ここではクトゥルフ神話６版の探索者の作り方を誘導している</p>
 </header>
+<a href="javascript:history.back()" class="back-button">
+  <img src="css/image/back-button.png" alt="戻る" />
+</a>
+
 
 <div class="main-content">
 
@@ -108,53 +112,54 @@
 	<div class="details-content js-details-content">
 		                <div class="profile-grid">
   <div class="label">回避：</div>
-  <div class="value">武器を持っていく場合は必ずKPに許可をもらってから書きましょう！
-書く内容はルルブに書いてあるのでそこを参照しましょう。<br/></div>
+  <div class="value">打撃や投げつけられた物体などをかわすことができる。初期値はDEX×2
+    <br/></div>
 
 
   <dt class="label">キック：</dt>
-  <div class="value">所持品は書いとくとセッション中に思わぬ役に立つことも。
-思い出の品とか書いているとエモい</div>
+  <div class="value">戦闘などの場面で足を使って攻撃する。
+    ダメージは1d6+db
+    </div>
 
   <div class="label">組み付き：</div>
-  <div class="value">ここはセッション終わったあとに書くところ。
-通過したシナリオを書いておくと〇</div>
+  <div class="value">直接ダメージが入る訳では無いが、対象者の動きを封じたり、武器を取り上げたりなどができる。</div>
 
   <dt class="label">こぶし：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">戦闘などの場面で拳を使って攻撃する。
+    ダメージは1d3+db
+    </div>
 
   <dt class="label">頭突き：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">戦闘などの場面で頭突きの攻撃</div>
 
   <dt class="label">投擲：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">物を上手く投げれるかの技能。
+
+  </div>
 
   <dt class="label">マーシャルアーツ：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">武道などの技術。
+    攻撃技能と同時に振って、成功すると、ダメージにプラスされる。
+    </div>
 
   <dt class="label">拳銃：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">拳銃を扱う技能
+    特定の部位に当てたい場合は技能にマイナス補正がつく。
+    種類によってダメージなどが違う
+    遠距離武器を使う場合はよく使われる技能
+    /div>
 
   <dt class="label">サブマシンガン：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">サブマシンガンを扱う技能</div>
 
   <dt class="label">ショットガン：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">ショットガンを扱う技能</div>
 
   <dt class="label">マシンガン：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">マシンガンを扱う技能</div>
 
   <dt class="label">ライフル：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">ライフルを扱う技能</div>
 </div>
 	</div>
 </details>
@@ -163,54 +168,63 @@
 	<div class="details-content js-details-content">
 		                <div class="profile-grid">
   <div class="label">応急手当：</div>
-  <div class="value">武器を持っていく場合は必ずKPに許可をもらってから書きましょう！
-書く内容はルルブに書いてあるのでそこを参照しましょう。<br/></div>
+  <div class="value">怪我をした時に、傷1つにつき、1回技能が振れる。
+    HPが1d3回復する
+    <br/></div>
 
 
   <dt class="label">鍵開け：</dt>
-  <div class="value">所持品は書いとくとセッション中に思わぬ役に立つことも。
-思い出の品とか書いているとエモい</div>
+  <div class="value">鍵が必要な扉などにピッキングが行える。
+  </div>
 
   <div class="label">隠す：</div>
-  <div class="value">ここはセッション終わったあとに書くところ。
-通過したシナリオを書いておくと〇</div>
+  <div class="value"> 物を隠す技能。 </div>
+</div>
 
   <dt class="label">隠れる：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">自分が隠れる為の技能</div>
 
   <dt class="label">聞き耳：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">よく使う技能。
+    周りの会話や小さい物音が聞けるかどうかの技能。
+    この技能で香りを嗅ぐという事もできる
+    
+
+    </div>
 
   <dt class="label">忍び歩き：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">静かに歩くための技能。
+  </div>
 
   <dt class="label">写真術：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">写真を上手く撮る技能。
+  </div>
 
 
   <dt class="label">精神分析：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">発狂状態のキャラクターを正常に戻す技能
+    自分が発狂した場合は使えない。
+    </div>
 
   <dt class="label">追跡：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">追跡するための技能。
+    行先の痕跡を見つけたりもできたりする。
+    </div>
 
   <dt class="label">登攀：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">崖などを登るための技能。</div>
 
   <dt class="label">図書館：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">よく使う技能<br/>
+    本棚や量の多い文字など、自分に必要な情報が得られるかどうかを判定する技能。
+    本棚を調べたり、ネットで検索する時にも使われたりする。
+    </div>
 
   <dt class="label">目星：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">よく使う技能。
+    探しているものを見つけたりする技能。
+    よく探索する時に使うことが多い。便利。
+    </div>
 
 </div>
 	</div>
@@ -221,49 +235,50 @@
 	<div class="details-content js-details-content">
 		                <div class="profile-grid">
   <div class="label">運転：</div>
-  <div class="value">武器を持っていく場合は必ずKPに許可をもらってから書きましょう！
-書く内容はルルブに書いてあるのでそこを参照しましょう。<br/></div>
+  <div class="value">運転するための技能。
+    何を運転出来るのかを決める必要がある。
+    <br/></div>
 
 
   <dt class="label">機械修理：</dt>
-  <div class="value">所持品は書いとくとセッション中に思わぬ役に立つことも。
-思い出の品とか書いているとエモい</div>
+  <div class="value">動かない機会などを修理することができる。</div>
 
   <div class="label">重機械操作：</div>
-  <div class="value">ここはセッション終わったあとに書くところ。
-通過したシナリオを書いておくと〇</div>
+  <div class="value">重機械を操作する場合、使う技能。</div>
 
   <dt class="label">乗馬：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">馬を乗りこなすための技能。</div>
 
   <dt class="label">水泳：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">水の中で上手く泳げるかどうかの技能。</div>
 
   <dt class="label">製作：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">何か制作する時に使える技能。
+    先に何が制作できるのかを決める必要がある。
+    </div>
 
   <dt class="label">操縦：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">何か機械などを操縦するために必要になる技能
+    先に何が操縦できるのかを決める必要がある。
+    </div>
 
   <dt class="label">跳躍：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">飛ぶ為の技能。
+    または、着地した時にダメージを軽減できるかなどにもできる。
+    
+    </div>
 
   <dt class="label">電気修理：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">電気を修理する時に使える技能。
+    機械とはまた別。
+    </div>
 
   <dt class="label">ナビゲート：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">道を迷わず良い道が選択出来るかどうかの技能。</div>
 
   <dt class="label">変装：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">変装するための技能。
+  </div>
 
 </div>
 	</div>
@@ -273,25 +288,26 @@
 	<div class="details-content js-details-content">
 		                <div class="profile-grid">
   <div class="label">言いくるめ：</div>
-  <div class="value">武器を持っていく場合は必ずKPに許可をもらってから書きましょう！
-書く内容はルルブに書いてあるのでそこを参照しましょう。<br/></div>
+  <div class="value">交渉時に相手を言いくるめるための技能。<br/></div>
 
 
   <dt class="label">信用：</dt>
-  <div class="value">所持品は書いとくとセッション中に思わぬ役に立つことも。
-思い出の品とか書いているとエモい</div>
+  <div class="value">交渉時に信用してもらえるかどうかの技能。
+  </div>
 
   <div class="label">説得：</div>
-  <div class="value">ここはセッション終わったあとに書くところ。
-通過したシナリオを書いておくと〇</div>
+  <div class="value">交渉時に説得してもらえるかどうかの技能。
+  </div>
 
   <dt class="label">値切り：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">値切りを行うための技能。
+    成功したら安く買える。
+    </div>
 
   <dt class="label">母国語：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">初期値はEDU×5の値。
+    出身地などにより、記入する値は変わってくる。
+    </div>
 
 
 </div>
@@ -302,84 +318,86 @@
 	<div class="details-content js-details-content">
 		                <div class="profile-grid">
   <div class="label">医学：</div>
-  <div class="value">武器を持っていく場合は必ずKPに許可をもらってから書きましょう！
-書く内容はルルブに書いてあるのでそこを参照しましょう。<br/></div>
+  <div class="value">医療に関する知識があるかどうかを判定する技能。
+    時間をかければ傷の回復をしたりもできたりする。
+    
+    <br/></div>
 
 
   <dt class="label">オカルト：</dt>
-  <div class="value">所持品は書いとくとセッション中に思わぬ役に立つことも。
-思い出の品とか書いているとエモい</div>
+  <div class="value">オカルトに関する知識があるかどうかを判定する技能。
+  </div>
 
   <div class="label">科学：</div>
-  <div class="value">ここはセッション終わったあとに書くところ。
-通過したシナリオを書いておくと〇</div>
+  <div class="value">化学の知識があるかどうかを判定する技能。</div>
 
   <dt class="label">クトゥルフ神話：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">初期値は0。
+    初めに記入することはほぼない。
+    シナリオをクリアしていくと、成長していく。
+    値によってSAN値に影響し、この技能が成長していくとSAN値の最大値が下がっていく。
+    
+    </div>
 
   <dt class="label">芸術：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">芸術の知識や技能があるかどうかを判定する。
+    先にどの芸術なのかを決める必要がある。
+    </div>
 
   <dt class="label">経理：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">経理に関する知識があるかどうかの技能。</div>
 
   <dt class="label">考古学：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">考古学に関する知識があるかどうかの技能。
+  </div>
 
   <dt class="label">コンピュータ：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">コンピュータに関する知識があるかどうかの技能。
+    コンピュータを扱う時にも使う技能。
+    </div>
 
   <dt class="label">心理学：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">心理学に関する知識があるかどうかの技能。
+    話している相手などに対して、技能を振ることで、相手の真偽や表情などが読み取れる。
+    技能を振る場合、KPがシークレットダイスで振り、成功かどうか分からない状態で結果を知らされることが多い。
+    </div>
 
   <dt class="label">人類学：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">人類学に関する知識があるかどうかの技能。</div>
 
   <dt class="label">生物学：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">生物学に関する知識があるかどうかの技能。</div>
 
   <dt class="label">地質学：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">地質学に関する知識があるかどうかの技能。</div>
 
   <dt class="label">電子工学：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">電子工学に関する知識があるかどうかの技能。</div>
 
   <dt class="label">天文学：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">天文学に関する知識があるかどうかの技能。</div>
 
   <dt class="label">博物学：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">博物学に関する知識があるかどうかの技能。</div>
 
   <dt class="label">法律：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">法律に関する知識があるかどうかの技能。</div>
 
   <dt class="label">薬学：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">薬学に関する知識があるかどうかの技能。薬が作れたりするかもしれない。</div>
 
   <dt class="label">歴史：</dt>
-  <div class="value">好きに書こう
-メモ欄を追加できたり、パスワードを設定できたりする</div>
+  <div class="value">歴史に関する知識があるかどうかの技能。</div>
 
 </div>
-
+<!---
     <button class="close-btn">閉じる</button>
-	</div>
+	</div>-->
+
+
 </details>
 </div>
+
 
 
 
