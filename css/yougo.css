@@ -1,9 +1,11 @@
 .term {
   position: relative;
   cursor: help;
-  color: #624841;
+  color: #E93838;
   font-weight: bold;
   text-decoration: underline dotted;
+    font-family: 'IM Fell English SC', serif;
+      gap: 4px; /* アイコンとテキストの間隔 */
 }
 
 /* カード本体 */
@@ -27,6 +29,7 @@
   border-left: 6px solid #F9D253;
   font-family: "Georgia", "游明朝", serif;
   transition: opacity 0.3s ease;
+    font-family: 'IM Fell English SC', serif;
 }
 
 /* 矢印風（上） */
@@ -36,7 +39,7 @@
   top: 1.4em;
   left: 15px;
   border: 8px solid transparent;
-  border-bottom-color: #624841;
+  border-bottom-color: #E93838;
   z-index: 99;
   display: none;
 }
@@ -47,6 +50,7 @@
 .term:focus::after,
 .term:focus::before {
   display: block;
+    font-family: 'IM Fell English SC', serif;
 }
 
 header input#searchInput {
@@ -59,4 +63,15 @@ header input#searchInput {
   max-width: 400px;
   background: #fff;
   color: #333;
+}
+
+.term:hover .term-icon {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+.term:hover::after,
+.term:hover::before,
+.term.active::after,
+.term.active::before {
+  display: block;
 }

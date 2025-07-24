@@ -1,3 +1,100 @@
+body{
+  font-family: 'IM Fell English SC', serif;
+}
+body {
+  background: #fff;
+  color: #333;
+  font-family: 'IM Fell English SC', serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.glossary-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.glossary-title {
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #d34219;
+}
+
+.glossary-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #624841;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  max-width: 300px;
+  flex: 1 1 280px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.2em;
+}
+
+.card-subtitle {
+  font-size: 0.9em;
+  color: #e0d8d4;
+}
+
+.card-text {
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+#searchInput {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 400px;
+  border: 2px solid #F9D253;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    max-width: 100%;
+  }
+}
+
+#sortToggle {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #624841;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+#sortToggle:hover {
+  background-color: #795e56;
+}
+
+
 body {
   background: #fff;
   color: #333;
@@ -44,7 +141,7 @@ body {
 .card-title {
   font-size: 1.4em;
   font-weight: bold;
-  color: #F9D253;
+  color: #fff;
   margin-bottom: 0.2em;
 }
 
@@ -63,7 +160,7 @@ body {
   font-size: 1rem;
   width: 80%;
   max-width: 400px;
-  border: 2px solid #F9D253;
+  border: 2px solid #fff;
   border-radius: 8px;
   margin-bottom: 20px;
 }
@@ -77,8 +174,8 @@ body {
 #sortToggle {
   padding: 8px 16px;
   font-size: 1rem;
-  background-color: #F9D253;
-  color: #624841;
+  background-color: #624841;
+  color: #fff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -89,3 +186,4 @@ body {
 
 #sortToggle:hover {
   background-color: #eac341;
+}

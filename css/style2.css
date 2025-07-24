@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* 全体レイアウト用のコンテナ */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    /* 左右マージン */
+}
+
+
+body{
+  background-image: url('image/parchment_01a.jpg');
+  background-size: cover;
+  font-family: 'IM Fell English SC', serif;
+  color: #2b1f14;
+}
+
+/*見出しタイトル*/
+
+
+h1 {
+  font-size: 40px;
+
+  text-align: center;
+  position: relative; /*positionをrelativeに指定*/
+  margin-top: 60px;
+  font-family: "Noto Serif JP";
+}
+h1::after {
+  position: absolute; /*positionをabsoluteに指定*/
+  /*content: "";*/
+  background-color: #000; /*下線の色*/
+  width: 200px; /*線の幅*/
+  height: 2px; /*線の太さ*/
+  bottom: -20px; /*線のタテ位置*/
+  left: 50%;  /*線のヨコ位置*/
+  transform: translateX(-50%);/*線のヨコ位置*/
+}
+
+.setumei{
+    color: #000;
+
+text-align: center;
+font-family: "Noto Serif JP";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 100px; /* 57.6px */
+}
+
+
+
+/*メインページ*/
+h2 {
+    border-top: double 3px #333;
+    border-bottom: solid 1px #333;
+    padding: 8px 16px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: #333;
+    font-weight: 400;
+    display: block;
+    box-sizing: border-box;
+    max-width: 500px;
+    text-align: center; 
+    margin: 24px;
+    margin-inline: auto;
+  }
+
+  .main-content {
+    max-width: 900px;         /* 最大幅：画面が広くても読みやすく */
+    margin: 0 auto;           /* 中央に配置 */
+    padding: 40px 130px;       /* 上下左右の余白 */
+    text-align: left;         /* テキストは左揃え */
+    line-height: 1.8;             /* 行間を少し広げて読みやすく */
+    font-size: 1rem;          /* 基本文字サイズ */
+    color: #333;    
+    letter-spacing: 0.03em;          /* 文字色 */
+    background: #fff;         /* 背景色（必要なら） */
+    box-sizing: border-box;
+
+
+  }
+  
+  /* スマホや小さい画面用に調整 */
+  @media screen and (max-width: 600px) {
+    .main-content {
+      padding: 30px 15px;
+      font-size: 0.95rem;
+    }
+  }
+
+  section{
+    margin: 20% auto;
+  }
+
+  .main-content h2 {
+    margin-top: 40px;     /* 上に余白 */
+    margin-bottom: 20px;  /* 下に余白（本文との間） */
+    color: #624841;       /* お好みで色指定 */
+    font-size: 1.8em;     /* お好みでサイズ調整 */
+  }
+  
+  .main-content p {
+    margin-bottom: 20px;  /* 段落の下に余白をつけると読みやすい */
+    line-height: 1.7;     /* 行間も少し広げると◎ */
+  }
+
+  .center-text {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: #51352e;
+}
+@media (max-width: 768px) {
+  .center-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+
+  
+  
+  /*画像*/
+  /* 本文画像のスタイル */
+.content-image {
+  text-align: center;
+  margin: 2em auto;
+  max-width: 100%;
+}
+
+.content-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+margin-top: 10%;
+  border-radius: 8px;
+  /*box-shadow: 0 4px 12px rgba(0,0,0,0.1);*/
+  transition: transform 0.3s ease;
+}
+/*
+.content-image img:hover {
+  transform: scale(1.02);
+}
+*/
+.content-image figcaption {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #666;
+  font-style: italic;
+}
+
+/* スマホ対応（必要であれば拡張可能） */
+@media screen and (max-width: 600px) {
+  .content-image img {
+    max-width: 90%;
+  }
+}
+
+img{
+    overflow: clip;
+}
+
+/*アイコン画像*/
+.sait_aicon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #eee;
+}
+
+.sait_aicon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.sait_aicon img:hover {
+  filter: brightness(80%);
+  cursor: pointer;
+
+}
+.hover-message {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.7);
+  color: #000;
+  padding: 4px 8px;
+  font-size: 0.8em;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.sait_aicon:hover .hover-message {
+  opacity: 1;
+}
+
+/*次のページに飛ぶ*/
+#tugi{
+    list-style-type: none;
+    margin: auto;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+
+}
+
+#tugi li{
+    width: 191px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#tugi li.kyaratugi a {
+    width: 191px;
+    height: 34px;
+    background: url('image/tansakushawotukuru.png') center center no-repeat;
+    background-size: cover;     
+    background-position: center;
+    display: block;
+    text-decoration: none;
+    text-indent: -999999px;
+}
+
+#tugi li.kyaratugi a:hover {
+    background: url('image/tansakushawotukuruhoba.png') center center no-repeat;
+    background-size: cover; 
+}
+
+#tugi li.playtugi a {
+    width: 191px;
+    height: 34px;
+    background: url('image/asobu.png');
+    background-size: cover;     
+    background-position: center;
+    display: block;
+    text-decoration: none;
+    text-indent: -999999px;
+}
+
+#tugi li.playtugi a:hover {
+    background: url('image/asobuhoba.png');
+    background-size: cover;
+}
+
+/*ホーム用css*/
+.site-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.site-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 200px;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none; /* リンクの下線を消す */
+  color: inherit;         /* テキスト色を継承 */
+  transition: transform 0.3s ease;
+}
+
+.site-card:hover {
+  transform: translateY(-5px);
+}
+
+.site-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.site-card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.site-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+@media screen and (max-width: 600px) {
+  .site-card {
+    width: 90%;
+  }
+}
+
+
+/*準備用css*//*
+.scenario-info {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 20px;
+    background-color: #f5f3f0;
+    border-left: 5px solid #624841;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    font-family: 'Yu Gothic', sans-serif;
+  }
+  
+  .scenario-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    width: 120px;
+    font-weight: bold;
+    color: #624841;
+    text-align: right;
+  }
+  
+  .value {
+    flex: 1;
+    color: #333;
+    white-space: pre-wrap;
+  }
+  */
+  /* スマホ対応 */
+  @media screen and (max-width: 600px) {
+    .scenario-row {
+      flex-direction: column;
+      text-align: left;
+    }
+  
+    .label {
+      width: 100%;
+      margin-bottom: 4px;
+    }
+  
+    .value {
+      width: 100%;
+    }
+  }
+  
+/*キャラ用css*/
+
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1em;
+  row-gap: 0.5em;
+  max-width: 100%;
+  font-size: 1em;
+}
+
+.label {
+  font-weight: bold;
+  white-space: nowrap;
+      color: #624841;
+      text-align: right;
+}
+
+.value {
+  word-break: break-word;
+  margin-bottom: 10px;
+}
+.highlight-label { font-weight: bold;
+  white-space: nowrap;
+      color: #E93838;
+}
+
+
+
+/* ヘッダー＆フッター */
+.header,
+.footer {
+    color: #ffffff;
+    padding: 32px 0;
+    text-align: center;
+    background: #624841;
+}
+
+header {
+  text-align: center;
+  background-color: #624841;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+
+
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-left: 5px solid #F9D253;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/*カード*/
+.term {
+    position: relative;
+    cursor: help;
+    color: #E93838;
+    font-weight: bold;
+    text-decoration: underline dotted;
+  }
+  
+  /* カード本体 */
+  .term::after {
+    content: attr(data-title) "\A" attr(data-subtitle) "\A\A" attr(data-description);
+    white-space: pre-line;
+    position: absolute;
+    top: 1.8em;
+    left: 0;
+    z-index: 100;
+    min-width: 240px;
+    max-width: 300px;
+    padding: 15px 18px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #624841, #51352e);
+    color: #fffaf0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    font-size: 0.9em;
+    line-height: 1.6;
+    display: none;
+    border-left: 6px solid #F9D253;
+    font-family: "Georgia", "游明朝", serif;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* 矢印風（上） */
+  .term::before {
+    content: "";
+    position: absolute;
+    top: 1.4em;
+    left: 15px;
+    border: 8px solid transparent;
+    border-bottom-color: #624841;
+    z-index: 99;
+    display: none;
+  }
+  
+  /* 表示時 */
+  .term:hover::after,
+  .term:hover::before,
+  .term:focus::after,
+  .term:focus::before {
+    display: block;
+  }
+  .term.show::after {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
